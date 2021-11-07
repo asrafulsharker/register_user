@@ -26,25 +26,16 @@ import {Button} from 'semantic-ui-react';
 
    render() {
      const {data} = this.state;
-
      return(
-
-
         <form onSubmit = {this.onSubmit} >
             <label htmlFor="email"><b>Email</b></label><br/>
             <input type="email" placeholder="Enter Email" id="email" name="email" value={data.email} onChange = {this.onChange} required/>
-
             <br/><br/>
-
             <label htmlFor="password"><b>Password</b></label><br/>
             <input type="password" placeholder="Enter Password" id="password" name="password" value={data.password} onChange = {this.onChange} required/>
-
-
             <br/><br/>
             <Button type="submit" primary>Login</Button>
         </form>
-
-
      );
     }
 }
