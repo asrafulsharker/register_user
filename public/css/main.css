@@ -223,16 +223,6 @@ header nav a.active:after {
 	animation: dot .3s forwards;
 }
 
-@keyframes dot {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
 
 /* Button */
 
@@ -448,15 +438,6 @@ section.bel .logo {
 	animation: stepSeek 20s linear 0s forwards;
 }
 
-@keyframes stepSeek {
-  0% {
-    width: 0%;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
 
 .steps li:after {
 	content: '';
@@ -470,34 +451,11 @@ section.bel .logo {
 
 /* Pulse */
 
-.dot {
-	position: absolute;
-	top: .9rem;
-	left: -.9rem;
-	width: 1rem;
-	height: 1rem;
-	background-color: #fee495;
-	border-radius: 100%;
-}
 
-.dot:before {
-	content: '';
-	position: absolute;
-	width: 1rem;
-	height: 1rem;
-	transform: scale(1.8);
-	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 100%;
-	z-index: -1;
-}
 
-.pulse {
-	top: -95.5rem;
-	left: -95.35rem;
-	right: 0;
-	position: absolute;
-	z-index: -2;
-}
+
+
+
 
 .get-the-smart-meter {
 	overflow: none;
@@ -550,16 +508,6 @@ section.subscribe {
 	opacity: 0;
 }
 
-@keyframes pulse {
-  0% {
-    opacity: 1;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1);
-  }
-}
 
 /* Troublesooting */
 
@@ -745,10 +693,6 @@ footer .social-icons {
 	margin-left: -2px;
 }
 
-footer .logo {
-	color: #fff;
-	font-weight: 400;
-}
 
 /* Blog */
 
@@ -1005,218 +949,3 @@ header .hamburger > div:after {
 }
 
 
-@media (max-width: 1024px) {
-	.demo {
-		width: 100%;
-	}
-
-	.demo .steps {
-		display: none;
-	}
-
-	.demo .phone {
-		left: 0 !important;
-		right: 0 !important;
-		margin: auto;
-	}
-
-	.demo .phone video {
-		display: none;
-	}
-}
-
-
-@media (max-width: 768px) {
-
-	.banner {
-		padding-top: 0 !important;
-	}
-
-	.demo-container {
-		padding: 0 !important;
-	}
-
-	.explainer iframe  {
-		width: 220px;
-		height: 130px;
-	}
-
-	.container {
-		padding: 0;
-	}
-
-	header .hamburger {
-		display: flex !important;
-	}
-
-	section {
-		padding: 4rem 3rem !important;
-	}
-
-	.col {
-		width: 100% !important;
-	}
-
-	.get-the-smart-meter {
-		background-size: 200%;
-	}
-
-	.beam-app-icon {
-		margin: 0;
-	}
-
-	.row {
-		margin-bottom: 2rem;
-	}
-
-	hr {
-		display: inline-block;
-		margin: 3rem 0;
-	}
-
-	h1 {
-		font-size: 2.5rem;
-		line-height: 2.8rem;
-	}
-
-	section.bel .logo {
-		font-size: 2.6rem;
-		line-height: 2.8rem;
-	}
-
-	.hero h1 {
-		font-size: 3rem;
-		margin-bottom: 1rem;
-	}
-
-	.hero h2 {
-		margin: 0;
-	}
-
-	h2 {
-		font-size: 1.5rem !important;
-		line-height: 2.2rem !important;
-	}
-
-	h3 {
-		margin-top: 2rem !important;
-	}
-
-	h4 {
-		margin-bottom: 1rem;
-	}
-
-	br {
-		display: none;
-	}
-
-	.phone {
-		width: 100%;
-		background-size: auto 90%;
-	}
-
-	header .menu {
-		opacity: 0;
-		transition: all .3s ease-in-out 0s;
-		pointer-events: none;
-		overflow: hidden;
-	}
-
-	header:hover .menu {
-		display: block;
-		opacity: 1;
-		pointer-events: inherit;
-	}
-
-	header .menu {
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background-color: #23293e;
-		padding: 5rem 3rem;
-		overflow: hidden;
-	}
-
-	header .menu a {
-		display: block;
-		font-size: 1.2rem;
-		line-height: 2rem;
-		height: auto;
-		padding: 1.2rem;
-		text-align: center;
-		transform: scale(.9);
-		transition: all .3s ease-in-out 0s;
-	}
-
-	header:hover .menu a {
-		transform: scale(1);
-	}
-
-	header .menu a:hover {
-		color: #fee495;
-	}
-
-	header .nav-button {
-		margin-top: 2rem;
-	}
-
-	header .menu a:after {
-		display: none;
-	}
-
-	header:hover .menu {
-		display: block;
-	}
-
-	img.beam-smart-meter {
-		width: 60vw;
-	}
-
-	.demo {
-		padding: 0 0 4rem;
-	}
-
-	.col:hover .thumb {
-		transform: scale(1);
-	}
-
-	.shopify-buy-frame {
-		margin: auto;
-		width: 160px;
-	}
-
-	.post-content {
-		width: 100%;
-	}
-
-	.post-sidebar {
-		width: 100%;
-		margin-top: 3rem;
-	}
-
-	footer {
-		padding: 4rem 3rem;
-	}
-
-	footer .logo {
-		width: 10rem;
-		margin-bottom: .5rem;
-	}
-
-	footer .social {
-		width: 100%;
-		margin-bottom: 3rem;
-	}
-
-	footer nav {
-		width: 100%;
-		margin-bottom: 2rem;
-	}
-
-	input {
-		min-width: 100% !important;
-		color:#000000;
-	}
-}
