@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import LoginForm from "../forms/LoginForm";
 import axios from 'axios';
 import {Button } from 'semantic-ui-react';
-import './beamlogo.png';
+
 
 
 class LoginPage extends React.Component{

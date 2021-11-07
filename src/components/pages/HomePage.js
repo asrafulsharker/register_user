@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import './beamlogo.png';
+
 
 const HomePage = () => (
 <div className="ui container">
