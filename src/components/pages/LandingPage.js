@@ -4,13 +4,10 @@ import {Link} from "react-router-dom";
 
 class LandingPage extends React.Component{
 
-//We are declaring the function "getQueryVariable"
   constructor(props){
     super(props);
     this.getQueryVariable = this.getQueryVariable.bind(this);
   }
-
-//This function decodes the URI and gets the parameters passed to it.
 getQueryVariable(variable){
          var query = window.location.search.substring(1);
          var vars = query.split("&");
