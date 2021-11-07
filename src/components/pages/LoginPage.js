@@ -26,14 +26,17 @@ submit = data => {
 render(){
   return(
 
-      <div>
-          <h1>Login Page</h1>
+      <div className="container login_container">
+        <div className="container_left">
+        <h1>Login Page</h1>
           <LoginForm submit={this.submit}/>
           <p id="status"></p>
-          <p>Make a new account? Right here.</p>
+        </div>
+        <div className="container_right">
+        <p>Make a new account? Right here.</p>
           <Link to="/registration" className="button">Registration</Link>
+        </div>
       </div>
-
     );
   }
 }

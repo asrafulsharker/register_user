@@ -1,8 +1,5 @@
 
 
-const isLocalhost = Boolean(
-
-);
 
 export default function register() {
   if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {

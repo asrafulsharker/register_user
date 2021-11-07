@@ -33,16 +33,19 @@ render(){
 
   //alert("Response is : " + this.state.response);
   return(
-    <div align="top">
+    <div className="container login_container">
+        <div className="container_left">
       <h1>Registration Page</h1>
       <RegistrationForm  submit={this.submit}/>
         <p id="status"></p>
+   
+        </div>
+        <div className="container_right">
         <Link to="/" className="button">Back to Home</Link>
-
-    </div>
+        </div>
+      </div>
 
   );
-
 }
 
 }
