@@ -45,12 +45,8 @@ import "react-toggle/style.css"
           <label htmlFor="password"><b>Password</b></label><br/>
           <input type="password" placeholder="Enter Password" id="password" name="password" value={data.password} onChange = {this.onChange} required/>
           <br/><br/>
-          <label htmlFor="admin"><b>Would you like to register as an Admin?</b></label><br/>
-          <Toggle
-            defaultChecked={this.state.admin}
-            name='admin'
-            value='true' onChange = {this.onChange}/><br/>
 
+  
           <button type="submit" className="button">Register</button>
       </form>
     </div>
