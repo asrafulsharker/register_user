@@ -73,6 +73,7 @@ input {
 	width: 360px;
 	height: 35px;
 	outline: none;
+	border: 1px solid burlywood;
 }
 
 .container_right p{
